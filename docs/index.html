@@ -9,7 +9,7 @@
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  document.write("Welcome," + profile.getName());
+  document.getElementById('hello').textContent = 'profile.getName()'
 }
 </script>
   
@@ -26,6 +26,7 @@
   
   
   <hr><hr>
+  <p>Welcome, </p><p id="hello"></p>
   <h1 _ngcontent-yuv-585="">Uh oh! Your device is not supported. To access Emdocs, you must use a computer and we also recommend using the latest version of Chrome, Safari, Firefox, Opera, Brave or Edge.</h1>
 <p>Note: Emdocs isn’t currently supporting mobile devices but will in the future.</p> equrfcl
 
